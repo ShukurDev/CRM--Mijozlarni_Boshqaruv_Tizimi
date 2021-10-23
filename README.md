@@ -22,15 +22,15 @@ This application can be accessed with 2 different usernames: Director, Boss, and
   - [x] Status.
 
 ## Client:
-  ***1. Uzin sees the orders he has placed and a new order can be placed.***
-  ***2.Each client has a settings section:
+  1.***Us sees the orders he has placed and a new order can be placed.***
+  2.***Each client has a settings section:
          profile picture, full name, phone number, email or gmail address.***
-  ***3. You can update this setting form at any time.***
-  ***4. Keeps track of statistics.***
+  3.***You can update this setting form at any time.***
+  4.***Keeps track of statistics.***
 
-Assignment of tasks
-  Customers cannot access the pages that the boss can access, so that every registered user automatically becomes a client.
+> ### Assignment of tasks
+>  *Customers cannot access the pages that the boss can access, so that every registered user automatically becomes a client.*
 
  
-Employee registration
+**Employee registration**
 In the department, the director or managers can add employees only by email. The director may appoint the employee as the manager at the time of addition. When a new employee is added, a unique link is created and emailed. The email owner can click the link and complete the registration by adding the username, full name and password.
