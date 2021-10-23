@@ -9,10 +9,10 @@ This application can be accessed with 2 different usernames: Director, Boss, and
 ![This is an image](http://d28k6hocvoxiuc.cloudfront.net/attachments/539/3ebbc1d8a2a43bfb5da7639c8682dafd/Django%20crm.png)
   > ## Chief:
   :white_check_mark: 1. Customers can add products.
-  2. Views all statistics.
-  3. Customers can change the status of their orders. .
-  4. Can filter orders.
-  5. On the main page:
+  :white_check_mark: 2. Views all statistics.
+  :white_check_mark: 3. Customers can change the status of their orders. .
+  :white_check_mark: 4. Can filter orders.
+  :white_check_mark: 5. On the main page:
         - name and phone number of each customer,
         - the last orders placed: name, short name, time of creation, status are displayed.
 > ### Orders are in 3 different cases:
