@@ -9,6 +9,7 @@ This application can be accessed with 2 different usernames: Director, Boss, and
 
   > ## Chief:
   '''
+  
   1. Customers can add products.
   2. Views all statistics.
   3. Customers can change the status of their orders. .
