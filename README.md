@@ -6,7 +6,7 @@
 
 Positions in the application
 This application can be accessed with 2 different usernames: Director, Boss, and Client.
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+![This is an image](https://www.instagram.com/p/CVXkqzPMTsb/?utm_source=ig_web_copy_link)
   > ## Chief:
   1. Customers can add products.
   2. Views all statistics.
