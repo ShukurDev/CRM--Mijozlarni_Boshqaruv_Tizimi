@@ -8,7 +8,7 @@ Positions in the application
 This application can be accessed with 2 different usernames: Director, Boss, and Client.
 ![This is an image](http://d28k6hocvoxiuc.cloudfront.net/attachments/539/3ebbc1d8a2a43bfb5da7639c8682dafd/Django%20crm.png)
   > ## Chief:
-  1. Customers can add products.
+  :white_check_mark: 1. Customers can add products.
   2. Views all statistics.
   3. Customers can change the status of their orders. .
   4. Can filter orders.
