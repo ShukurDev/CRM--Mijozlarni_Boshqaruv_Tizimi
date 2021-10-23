@@ -16,8 +16,8 @@ This application can be accessed with 2 different usernames: Director, Boss, and
         - name and phone number of each customer,
         - the last orders placed: name, short name, time of creation, status are displayed.
 > ### Orders are in 3 different cases:
-   **Next, Delivered, Delivered**
-***In the order form:***
+>  **Next, Delivered, Delivered**
+#### ***In the order form:***
   - [x] Product Name
   - [x] Status.
 
