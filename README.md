@@ -1,6 +1,6 @@
 # CRM--Mijozlarni_Boshqaruv_Tizimi
 
-''Customer management system.''
+**Customer management system.**
 Description:
 In this system, you can manage customers who have distorted your company and see all their data.
 
