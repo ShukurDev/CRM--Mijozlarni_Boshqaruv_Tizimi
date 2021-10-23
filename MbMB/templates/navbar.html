@@ -1,0 +1,50 @@
+{% load static %}
+
+<head>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!--<img style="border-radius: 50%; height: 50px; width: 50px; margin-right: 10px;" src="">-->
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+            {% if request.user.is_staff %}
+                <img style="border-radius: 50%; height: 50px; width: 50px;" src="{% static 'images/logo.jpg' %}">
+                 <a class="navbar-brand" href="#">ShukurDev</a>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Asosiy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'product' %}">Mahsulot</a>
+                </li>
+                <li class="nav-item dropdown">
+            {% else %}
+                   {% if request.user.customer.profile_pic %}
+                      <img style="border-radius: 50%; height: 50px; width: 50px;" src="{{ request.user.customer.profile_pic.url }}">
+                       <a style="font-family:"Roboto", "Lucida Grande", Verdana, Arial, sans-serif" class="navbar-brand" href="/">Mijozlarni Boshqaruv Tizimi</a>
+                        <a style="font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif class="navbar-brand" href="{% url 'account' %}">Settings</a>
+
+                    {% else %}
+                        <a style="font-family:"Roboto", "Lucida Grande", Verdana, Arial, sans-serif" class="navbar-brand" href="/">Mijozlarni Boshqaruv Tizimi</a>
+                        <a style="font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif class="navbar-brand" href="{% url 'account' %}">Settings</a>
+                   {% endif %}
+
+            {% endif %}
+      </ul>
+    </div>
+    <span style="color: white; margin:10px;  font-family: 'Abel', sans-serif; ">Salom {{request.user}}</span><br>
+    <span><a  style="color: #fff; margin-right: 20px; font-size: 18px; text-decoration: none; " class="btn btn-outline-secondary" href="{% url 'logout' %}">Chiqish</a></span>
+</nav>
+
+

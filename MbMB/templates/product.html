@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% include 'navbar.html' %}
+
+
+{% block content %}
+<br>
+    <body class="oraligi">
+       <div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+                    <h4 class="text-center">Mahsulotlar</h4>
+				    <a class="btn btn-warning  btn-sm btn-block" href="{% url 'product_form' %}">Mahsulot qo'shish</a>
+                </div>
+
+				<div class="card card-body">
+					<table class="table table-hover table-responsive-sm">
+						<tr style="background-color: cadetblue;">
+
+							<th>Mahsulot</th>
+							<th>Category</th>
+							<th>Narxi
+                            </th>
+						</tr>
+						{% for i in products %}
+						<tr>
+						  <td>{{i.name}}</td>
+						  <td>{{i.category}}</td>
+						  <td>Rs.{{i.price}}</td>
+						</tr>
+						{% endfor %}
+					</table>
+				</div>
+			</div>
+       </div>
+    </body>
+
+{% endblock %}
+<hr>

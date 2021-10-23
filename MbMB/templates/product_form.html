@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <body class="orqa">
+
+    <div class="row mt-3 mb-3 ml-5 p-1" id="stil">
+         <div class="col-md-10 ml-5">
+               <div class="card card-body">
+
+                     <form action=" " method="POST">
+                        {% csrf_token %}
+                            {{ form.as_p }}
+                             <hr>
+                        <button class="btn btn-warning  btn-sm btn-block" type="submit">Yaratish</button>
+                     </form>
+
+               </div>
+         </div>
+    </div>
+
+    </body>
+{% endblock %}

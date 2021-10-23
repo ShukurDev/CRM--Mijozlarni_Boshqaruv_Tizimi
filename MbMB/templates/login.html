@@ -1,0 +1,57 @@
+{% load static %}
+
+<h1 style="margin-left: 500px; margin-top: 20px;">Saytga Kirish</h1>
+
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<body style="background-color: lightgreen">
+    <div style="width: 600px!important;" class="offset-3">
+        <div class="card bg-info">
+            <div class="card-body mx-auto">
+                    <h4 class="card-title mt-3 text-center">Akkountga Kirish</h4>
+                    <form method="POST",action="">
+                        {% csrf_token %}
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="username" type="text" placeholder="Username">
+                        </div>
+                        <!-- form-group// -->
+
+                        <!--Form password-->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input name="password" placeholder="Password" type="text">
+                        </div>
+                        <!-- form-group// -->
+
+                        <!--From Button-->
+                        <div class="form-group">
+                            <button type="submit"  class="btn btn-warning btn-block">Kirish</button>
+                        </div>
+                        <!-- form-group// -->
+                    </form>
+                    <p>Ro'yhatdan o'tmaganmisz?</p>
+                    <a class="btn btn-primary btn-block" href="{% url 'register' %}">Ro'yhatdan o'tish</a> </p>
+
+                {% for message in messages %}
+
+                   <p id="messages"><strong>{{message}}</strong></p>
+
+                {% endfor %}
+            </div>
+        </div>
+        <!-- card.// -->
+    </div>
+    <!--container end.//-->
+</body>
+
+{% endblock content %}

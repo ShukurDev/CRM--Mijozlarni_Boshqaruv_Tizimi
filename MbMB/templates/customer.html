@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="oraligi">
+
+
+   <div id="stil">
+        <div style=" display: flex; border:4px;">
+               <div  class="card card-body" id="stil" style="width:300px">
+                    <table class="table table-sm" >
+                        <tr>
+                            <th>
+                                <h2>Mijoz</h2>
+                            </th>
+                        </tr>
+                    </table>
+
+                    <button type="button" class="btn btn-outline-primary">Mijozni yangilash</button>
+                    <a  href="{% url 'create_order' customer.id %}" class="btn btn-outline-warning">Yangi buyurtma uchun</a>
+                </div>
+
+                <div  class="card card-body" id="stil">
+                    <table class="table table-sm" >
+                        <tr>
+                            <th>
+                                <h2>Contact Information</h2>
+                            </th>
+                        </tr>
+                        <tbody>
+                        <td><p><b>Email:</b> <i>{{ customer.email }}</i></p>
+                            <p><b>Phone:</b>  <i>{{ customer.phone }}</i></p>
+                        </td>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div  class="card card-body" id="stil">
+                    <table class="table table-sm" >
+                        <tr>
+                            <th>
+                                <h2>Total Orders</h2>
+                            </th>
+                        </tr>
+                        <tbody>
+                        <td>
+                            <h1 style="margin-left: 40px;" class="card-title">{{ total_orders }}</h1>
+                        </td>
+                        </tbody>
+                    </table>
+
+                </div>
+        </div>
+
+        <div>
+            <nav class="navbar navbar-light bg-drink" id="stil">
+                  <div class="container-fluid">
+                        <form method = "GET">{%  csrf_token %}
+
+                            <div style="border-width: 6px;">
+                                <span style="border-width: 5px">{{ myfilter.form }}</span>
+                                <span><button class="btn btn-outline-primary" type="submit">Search</button></span>
+                            </div>
+                        </form>
+                  </div>
+            </nav>
+        </div>
+
+</div>
+    <div  class="card card-body" id="stil">
+			<table class="table table-sm" >
+				<tr>
+					<th>
+						<h5>Mahsulot</h5>
+					</th>
+					<th>
+						<h5>Qisqa nom</h5>
+					</th>
+					<th>
+						<h5>Yaratilgan vaqt</h5>
+					</th>
+					<th>
+						<h5>Holat</h5>
+					</th>
+					<th>
+						<h5>Yangilash</h5>
+					</th>
+					<th>
+						<h5>O'chirish</h5>
+					</th>
+				</tr>
+
+				{% for order in orders %}
+					<tr>
+						<td>{{order.product}}</td>
+						<td>{{order.note}}</td>
+						<td>{{order.date_created}}</td>
+						<td>{{order.status}}</td>
+						<td><a class = "btn btn-sm btn-info" href="{% url 'update_order' order.id %}">Yangilash</a></td>
+						<td><a class="btn btn-sm btn-danger" href="{% url 'delete_order' order.id %}">Uchirish</a></td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+
+</body>
+{% endblock %}

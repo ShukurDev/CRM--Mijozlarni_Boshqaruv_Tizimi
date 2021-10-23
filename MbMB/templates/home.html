@@ -1,0 +1,90 @@
+{% include 'base.html' %}
+{% load static %}
+{% include 'status.html' %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asosiy</title>
+</head>
+
+{% block content %}
+<body class="oraligi">
+    <div class="row">
+        <div class="col-md-4 qisqa">
+            <h5 class="text1">MIJOZLAR:</h5>
+            <hr>
+            <div class="card card-body">
+                <a class="btn btn-warning  btn-sm btn-block" href="">MIJOZ YARATISH</a>
+                <table class="table table-sm">
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            Mijoz
+                        </th>
+                        <th>
+                            Telefon
+                        </th>
+                    </tr>
+                    {% for i in customers %}
+                    <tr>
+                        <td>
+                            <a href="{% url 'customer' i.id %}" class="btn btn-info  btn-sm btn-block">Ko'rish</a>
+                        </td>
+                        <td>
+                            {{ i.name }}
+                        </td>
+                        <td>
+                            {{ i.phone }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-7 qisqa">
+            <h5 class="text1">OXIRGI BUYURTMALAR:</h5>
+            <hr>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <th>
+                            Mahsulot
+                        </th>
+                        <th>
+                            Qisqa nom
+                        </th>
+                        <th>
+                            Yaratilgan vaqt
+                        <th>
+
+                        <th>
+                            Holati
+                        </th>
+                        <th>
+                            Yangilash
+                        </th>
+                        <th>
+                            O'chirish
+                        </th>
+                    </tr>
+                    {% for j in orders %}
+                     <tr>
+                        <td>{{ j.product }}</td>
+                         <td>{{ j.note }}</td>
+                        <td>{{ j.date_created }}</td>
+                         <td></td>
+                        <td>{{ j.status }}</td>
+                        <td><a class="btn btn-sm btn-info" href="{% url 'update_order' j.id %}">Yangilash</a></td>
+                        <td><a class="btn btn-sm btn-danger" href="{% url 'delete_order' j.id %}">O'chirish</a></td>
+                     </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

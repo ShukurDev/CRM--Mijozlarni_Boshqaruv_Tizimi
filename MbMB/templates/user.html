@@ -1,0 +1,38 @@
+{%  extends 'base.html' %}
+{% block content %}
+{%  include 'status.html' %}
+<body class="oraligi">
+    <div class="card card-body" id="stil">
+			<table class="table table-sm" >
+            <a class="btn btn-warning  btn-sm btn-block" href="{% url 'create_order' request.user.customer.id %}">Buyurtma berish</a>
+				<tr>
+					<th>
+						<h5>Mahsulot</h5>
+					</th>
+					<th>
+						<h5>Qisqa nom</h5>
+					</th>
+					<th>
+						<h5>Yaratilgan vaqt</h5>
+					</th>
+					<th>
+						<h5>Holat</h5>
+					</th>
+
+				</tr>
+
+				{% for order in orders %}
+					<tr>
+						<td>{{order.product}}</td>
+						<td>{{order.note}}</td>
+						<td>{{order.date_created}}</td>
+						<td>{{order.status}}</td>
+
+					</tr>
+				{% endfor %}
+            </table>
+      </div>
+</body>
+
+
+{% endblock %}

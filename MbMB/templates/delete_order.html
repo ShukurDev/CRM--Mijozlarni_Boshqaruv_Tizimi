@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body style="background-color: darkgray" >
+    <div class="markaz">
+            <form action="{% url 'delete_order' order.id %}" method="POST">
+            {% csrf_token %}
+                <h1>Siz rostan ham "{{ order }}" ni o'chirishni hohlaysizmi ?</h1>
+
+                <button id="ulcham" type="submit" class="btn btn-danger btn-sm btn-block"><b>Ha ,albatta</b></button>
+                <a id="ulcham" class="btn btn-success btn-sm btn-block" href="{% url 'home' %}"><b>Yo'q,ortga</b></a>
+            </form>
+    </div>
+    </body>
+
+{% endblock %}

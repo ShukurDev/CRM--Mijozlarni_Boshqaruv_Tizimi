@@ -1,0 +1,69 @@
+<h1 style="margin-left: 500px; margin-top: 20px;">Ro'yhatdan o'tish</h1>
+{% block content %}
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<!------ Include the above in your HEAD tag ---------->
+
+
+<!--Asosiy qisim-->
+<body style="background-color: lightgreen">
+    <div style="width: 600px; margin-top: 80px;" class="offset-3">
+        <div class="card bg-info">
+            <div class="card-body mx-auto">
+                <h4 class="card-title mt-3 text-center">Akkount yaratish</h4>
+                <form method="POST" , action="">
+                    {% csrf_token %}
+
+                    <!--Username form -field -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                            {{form.username}}
+                    </div>
+                    <!-- // end username form-f -->
+
+                    <!--Email field-->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        {{form.email}}
+                    </div>
+                    <!--//Email - field -->
+
+                     <!--Password -1 field -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        {{ form.password1 }}
+                    </div>
+                    <!-- //end password-1 -->
+
+                    <!--Password -2 field -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        {{ form.password2 }}
+                    </div>
+                    <!--//End Password -2 field -->
+
+                    <!--Button field -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block"> Yaratish  </button>
+                    </div>
+                </form>
+                <p class="">Ro'yhatdan o'tganmisz?<a class = "btn btn-primary btn-block"  href="{% url 'login' %}">Kirish</a> </p>
+           </div>
+        </div>
+    </div>
+    <!--container end.//-->
+</body>
+
+{% endblock content %}
