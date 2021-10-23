@@ -2,7 +2,7 @@
 
 ## Customer management system.
 **Description:**
-In this system, you can manage customers who have distorted your company and see all their data.
+*In this system, you can manage customers who have distorted your company and see all their data.*
 
 Positions in the application
 This application can be accessed with 2 different usernames: Director, Boss, and Client.
