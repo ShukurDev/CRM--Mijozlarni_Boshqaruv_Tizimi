@@ -34,4 +34,4 @@ This application can be accessed with 2 different usernames: Director, Boss, and
  
 **Employee registration**
 In the department, the director or managers can add employees only by email. The director may appoint the employee as the manager at the time of addition. When a new employee is added, a unique link is created and emailed. The email owner can click the link and complete the registration by adding the username, full name and password.
-:red_circle: 🟡_circle: 🔵_circle: ⚪_circle: 🟠 🟢
+:red_circle: 🟡 🔵 ⚪ 🟠 🟢
