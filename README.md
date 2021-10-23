@@ -13,8 +13,8 @@ This application can be accessed with 2 different usernames: Director, Boss, and
   3. Customers can change the status of their orders. .
   4. Can filter orders.
   5. On the main page:
-        name and phone number of each customer,
-         the last orders placed: name, short name, time of creation, status are displayed.
+        - name and phone number of each customer,
+        - the last orders placed: name, short name, time of creation, status are displayed.
 Orders are in 3 different cases:
   Next, Delivered, Delivered
 In the order form:
