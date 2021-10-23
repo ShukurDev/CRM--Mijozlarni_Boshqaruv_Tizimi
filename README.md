@@ -8,6 +8,7 @@ Positions in the application
 This application can be accessed with 2 different usernames: Director, Boss, and Client.
 
   > ## Chief:
+  '''
   1. Customers can add products.
   2. Views all statistics.
   3. Customers can change the status of their orders. .
@@ -15,7 +16,7 @@ This application can be accessed with 2 different usernames: Director, Boss, and
   5. On the main page:
         name and phone number of each customer,
          the last orders placed: name, short name, time of creation, status are displayed.
-
+  '''
 Orders are in 3 different cases:
   Next, Delivered, Delivered
 In the order form:
