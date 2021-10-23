@@ -6,7 +6,7 @@
 
 Positions in the application
 This application can be accessed with 2 different usernames: Director, Boss, and Client.
-![This is an image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fiverr.com%2Fqooatechteam%2Fcreate-django-crm-website-with-django-web-framework&psig=AOvVaw1Ffn_IpsKldWRxhejMmD6z&ust=1635092496516000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKi8tbD44PMCFQAAAAAdAAAAABAD)
+![This is an image](https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs2/181260289/original/278189054f8ca8a3f3ade1a508f33462d7174560/create-django-crm-website-with-django-web-framework.png)
   > ## Chief:
   1. Customers can add products.
   2. Views all statistics.
