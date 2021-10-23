@@ -15,10 +15,11 @@ This application can be accessed with 2 different usernames: Director, Boss, and
   5. On the main page:
         - name and phone number of each customer,
         - the last orders placed: name, short name, time of creation, status are displayed.
-Orders are in 3 different cases:
-  Next, Delivered, Delivered
-In the order form:
-  Product Name, Status.
+> ### Orders are in 3 different cases:
+   **Next, Delivered, Delivered**
+***In the order form:***
+  - [x] Product Name
+  - [x] Status.
 
 Client:
   1. Uzin sees the orders he has placed and a new order can be placed.
