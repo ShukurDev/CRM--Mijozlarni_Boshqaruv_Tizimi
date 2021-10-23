@@ -21,12 +21,12 @@ This application can be accessed with 2 different usernames: Director, Boss, and
   - [x] Product Name
   - [x] Status.
 
-Client:
-  1. Uzin sees the orders he has placed and a new order can be placed.
-  2.Each client has a settings section:
-         profile picture, full name, phone number, email or gmail address.
-  3. You can update this setting form at any time.
-  4. Keeps track of statistics.
+## Client:
+  ***1. Uzin sees the orders he has placed and a new order can be placed.***
+  ***2.Each client has a settings section:
+         profile picture, full name, phone number, email or gmail address.***
+  ***3. You can update this setting form at any time.***
+  ***4. Keeps track of statistics.***
 
 Assignment of tasks
   Customers cannot access the pages that the boss can access, so that every registered user automatically becomes a client.
