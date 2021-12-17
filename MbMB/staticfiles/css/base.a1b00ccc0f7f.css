@@ -1,0 +1,58 @@
+.qisqa {
+    margin-left: 10px!important;
+}
+.oraligi {
+    background-color: darkseagreen;
+}
+.orqa {
+    color: darkblue;
+    background-color: lightblue;
+}
+#total-orders,#orders-delivered,#orders-pending{
+		background-color: #4f868c!important;
+	}
+.text1 {
+    text-decoration-style: inherit;
+    font-family: "Comic Sans MS";
+    color:black;
+}
+.card10 {
+    background-color: gainsboro;
+}
+.ekran {
+    background-color: burlywood;
+}
+.ekran1 {
+    background-color: #3fe787;
+}
+#stil {
+    border: 5px crimson!important;
+    margin: 10px!important;
+}
+.markaz {
+    width:100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#ulcham {
+    width:150px;
+    height: 40px;
+    font-family: sans-serif;
+}
+#messages{
+			background-color: grey;
+			color: #fff;
+			padding: 10px;
+			margin-top: 10px;
+		}
+
+
+
+
+
+
+
+
+
