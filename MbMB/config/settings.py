@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # mahalliy apps
     'crm.apps.CrmConfig',
+    'django-environ',
 ]
 
 MIDDLEWARE = [
