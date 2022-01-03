@@ -14,7 +14,6 @@ def cutomer_add_togroup(sender, instance, created, **kwargs):
             user=instance,
             name=instance.username,
         )
-        print("Mijoz gruhingizga qushildi.")
 
 
 post_save.connect(cutomer_add_togroup, sender=User)
