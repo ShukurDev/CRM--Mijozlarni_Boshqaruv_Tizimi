@@ -40,8 +40,9 @@
                         <!-- form-group// -->
                     </form>
                     <p>Ro'yhatdan o'tmaganmisz?</p>
-                    <a class="btn btn-primary btn-block" href="{% url 'register' %}">Ro'yhatdan o'tish</a> </p>
+                    <a class="btn btn-primary btn-block" href="{% url 'register' %}">Ro'yhatdan o'tish</a><br>
 
+                <a class="btn btn-success btn-block" href="{% url 'reset_password' %}">Parolingiz esdan chiqdimi ?</a>
                 {% for message in messages %}
 
                    <p id="messages"><strong>{{message}}</strong></p>

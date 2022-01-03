@@ -28,7 +28,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1','.pythonany']
+ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1', '.pythonany']
 
 # Application definition
 
@@ -135,9 +135,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_USE_TLS =True
+EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'shukurdev02@gmail.com'
-EMAIL_HOST_PASSWORD = '([:%1/#s7_\h5u%)]'
+EMAIL_HOST_PASSWORD = 'sdncphsjoqlswhxt'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

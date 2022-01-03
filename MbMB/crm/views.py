@@ -35,13 +35,6 @@ def registerview(request):
         if form.is_valid():
             user = form.save()
             username = form.cleaned_data.get('username')
-
-            group = Group.objects.get(name='customer')
-            user.groups.add(group)
-
-            Customer.objects.create(
-                user=user,
-            )
             messages.success(request, "Siz muvaffaqiyatli ro'yhatdan o'tdingiz" + username)
             return redirect('login')
     context = {'form': form}
